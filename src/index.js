@@ -49,7 +49,7 @@ io.on('connection', function (client) {
   console.log('a user connected');
   //Listens for a new chat message
   client.on('newChannel', function (name, description) {
-    //Create channel
+    //Create channelll
     let newChannel = new Channel({
       name: name,
       description: description,
@@ -98,8 +98,6 @@ io.on('connection', function (client) {
     });
   });
 });
-/*||||||||||||||||||||END SOCKETS||||||||||||||||||*/
-console.log(config.port,"DDDDDDDDDDDDDDDDDDDDDDD")
 app.server.listen(config.port);
 console.log(`Started on port ${app.server.address().port}`);
 
