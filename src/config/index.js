@@ -3,7 +3,7 @@ import mongodb from 'mongodb';
 export default {
   //"port": 3000,
   //"mongoUrl": "mongodb+srv://taskapp:mostafa155ali2@cluster0-cplxz.mongodb.net/test?retryWrites=true",
-  "port": process.env.PORT,
+  "port": process.env.PORT||3000,
   //"mongoUrl": "mongodb://localhost:27017/chat-api",
 
   "mongoUrl": process.env.MONGODB_URI,
